@@ -280,6 +280,17 @@ Link: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1
 
 ---
 
+## Research Data Management for Reproducibility – SciNet HPC at the University of Toronto
+
+[This session](https://www.youtube.com/watch?v=kqRIR4XuWyM) provides a high-level overview of research data management (RDM) and its role in ensuring reproducibility. Rather than focusing on discipline-specific methods, it explores broader developments, challenges, and future directions.
+It covers the history of reproducible research, key challenges, and the importance of applying FAIR principles (Findable, Accessible, Interoperable, Reusable). The movement began in the 1990s with Jon Claerbout, who argued that openly sharing data and code helps prevent errors in analysis. Whitaker’s Matrix of Reproducibility categorises reproducibility into four levels: reproducible (same data, same code, same results), replicable (different data, same code, same results), robust (same data, different code, same results), and generalisable (different data, different code, same results).
+The session highlights replication issues in psychology, economics, and social sciences, where non-replicable studies remain highly cited. In computational research, challenges include high costs, rapidly evolving software, and access restrictions. The Research Data Alliance promotes the idea of a "Research Compendium" to ensure reproducibility.
+It concludes with US National Science Foundation recommendations on documentation, statistical transparency, and policies to improve replication efforts. As reproducibility grows in importance, RDM plays a key role in ensuring efficient reuse of data, code, and documentation, thereby maintaining the credibility of research.
+
+> Contributor: Lilith
+
+---
+
 ## “Ten Years of Sharing Reproducible Research” by Limor Peer, PhD (Yale University)
 
 This article reflects on a decade of advancements in promoting reproducibility in research, especially the challenges and successes of Yale’s ISPS Data Archive. It addresses the challenges faced when trying to reuse shared data and code, especially the common obstacles such as poor documentation, software incompatibility, and computational failures that may hinder reproducibility. Curators as well as their importance in ensuring long-term accessibility is also highlighted alongside YARD, a workflow tool that enhances data curation and verification. Open science initiatives and journal policies have improved reproducibility; however, challenges remain, such maintaining functional code over time and integrating automation with human oversight. This piece offers valuable insights into the evolving landscape of research transparency and the critical role of structured data stewardship.
