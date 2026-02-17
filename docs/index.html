@@ -23,7 +23,7 @@
 <meta name="author" content="Jasper Slingsby" />
 
 
-<meta name="date" content="2026-02-13" />
+<meta name="date" content="2026-02-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -237,7 +237,7 @@ div.csl-indent {
 <div id="header">
 <h1 class="title">A Minimal Introduction to Reproducible Research</h1>
 <p class="author"><em>Jasper Slingsby</em></p>
-<p class="date"><em>2026-02-13</em></p>
+<p class="date"><em>2026-02-17</em></p>
 </div>
 <div id="overview" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Overview<a href="index.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -246,7 +246,7 @@ div.csl-indent {
 <div id="general" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> General<a href="index.html#general" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This really is a minimalist introduction. We only have a week! I’ll focus on providing a broad overview of the general framework and motivation for reproducible research (including good data management), teaching a few practical skills along the way.</p>
-<p>Mostly this is not fun and exciting, but it is important stuff for any biologist to know. I’ll try my best to make it interesting! Hopefully by the end of the module you’ll see the value in it all - both for you as an individual and for science and society in general.</p>
+<p>Mostly this is not fun and exciting, but it is important stuff for any scientist to know. I’ll try my best to make it interesting! Hopefully by the end of the module you’ll see the value in it all - both for you as an individual and for science and society in general.</p>
 <blockquote>
 <p><em>“Let us emphasize again this obvious conclusion: a scholar’s positive contribution is measured by the sum of the original data that [they] contribute… Hypotheses come and go but data remain. Theories desert us, while data defend us. They are our true resources, our real estate, and our best pedigree. In the eternal shifting of things, only they will save us from the ravages of time and from the forgetfulness or injustice of [people]. To risk everything on the success of one idea is to forget that every fifteen or twenty years theories are replaced or revised. So many apparently conclusive theories in physics, chemistry, geology, and biology have collapsed in the last few decades!”</em> - Santiago Ramón y Cajal, 1906 Nobel Laureate, from <em>Advice for a Young Investigator</em> 1898 <span class="citation">(<a href="#ref-Ramon1999">Ramón y Cajal 1999</a>)</span></p>
 </blockquote>
@@ -354,7 +354,64 @@ div.csl-indent {
 <li>Click <code>Apply</code></li>
 <li>Restart RStudio</li>
 </ul>
-<p>Lastly, you need to install the <a href="https://www.tidyverse.org/"><em>Tidyverse</em></a> set of R packages. This can be done using the code <code>install.packages("tidyverse")</code>.</p>
+<p>Ok, now everything should be working. <strong>If not</strong>, and you’ve tried repeating steps, have a look at the installation section of <a href="https://happygitwithr.com/">Happy Git with R</a> to troubleshoot…</p>
+<p>The next steps (explained below) are to <em>fork</em> and <em>clone</em> your first repo to see if everything is working, and then to modify a file in RStudio, <em>push</em> it back to your forked repo, and then create a <em>pull request</em> for me to review and accept your changes. This let’s me know that you’ve made it through the preparation for the practical, and it gives me your GitHub username.</p>
+<ol start="9" style="list-style-type: decimal">
+<li>In GitHub:</li>
+</ol>
+<ul>
+<li>Make sure you are logged in, search and navigate to <code>https://github.com/PlantEcologi/BIO3019S_test</code></li>
+<li>Click <code>Fork</code>, which will make a copy of the repository to your own workspace</li>
+<li>Copy the URL to your own version and follow the instructions below for cloning the repository in RStudio</li>
+</ul>
+<ol start="10" style="list-style-type: decimal">
+<li>In RStudio:</li>
+</ol>
+<ul>
+<li>In the top-right of the window you’ll see <code>Project: (None)</code> - click on it and select <code>New Project</code> then <code>Version Control</code> then <code>Git</code></li>
+<li>In the <code>Repository URl:</code> box paste the URL to your forked repo (It should look something like : <code>https://github.com/YourGitHubUsername/your-forked-repo_name.git</code>)</li>
+<li><code>Project directory name</code> should fill automatically</li>
+<li>For <code>Create project as subdirectory of:</code> hit <code>Browse</code> and navigate through your file system to where you want to put your folder for storing your Git repositories. I recommend something high in your directory system like <code>~Documents/GIT</code>. Avoid putting it in a folder that syncs online like a OneDrive, GoogleDrive, iCloud or Dropbox folder. If you’ve used Git before you may have set this already and can skip this step.</li>
+<li>Click <code>Create Repository</code></li>
+</ul>
+<p>Your RStudio window should now look something like this:</p>
+<p><br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:rstudiosuccess"></span>
+<img src="img/rstudiosuccess.png" alt="What you should see... **Note** there are three files in the `Files` tab in the bottom-right window, and you should see a `Git` tab for the top-right window. It also says `pullltest` in the project drop-down top-right on mine, but yours will display the name you gave your forked repo." width="90%" />
+<p class="caption">
+Figure 1.1: What you should see… <strong>Note</strong> there are three files in the <code>Files</code> tab in the bottom-right window, and you should see a <code>Git</code> tab for the top-right window. It also says <code>pullltest</code> in the project drop-down top-right on mine, but yours will display the name you gave your forked repo.
+</p>
+</div>
+<p><br></p>
+<ul>
+<li>Open the <code>README.md</code> file in RStudio</li>
+<li>Add your message (something like “Hi! This is <em>Real Name</em> and I’ve made it this far!!!”) and save the file</li>
+<li>Select the <code>Git</code> tab in the top-right window</li>
+<li>Check the box next to <code>README.md</code> and click <code>Commit</code></li>
+<li>Add a <code>Commit message</code> to say what changes you’ve made</li>
+<li>Then hit <code>Push</code></li>
+<li>It may ask you to authenticate. Select <code>Authenticate in your web browser</code>. The web browser will ask you to give Git permissions. Allow the permissions and it should work.</li>
+</ul>
+<p>If you get an error at this point to the effect of “You do not have permission to push to this repository”, then you may have forgotten to fork your own repo from my one and are trying to push to mine… If so, start again from step 9.</p>
+<p>If you encounter authentication issues, redo step 7.</p>
+<ol start="11" style="list-style-type: decimal">
+<li>In GitHub (i.e. online)</li>
+</ol>
+<ul>
+<li>Click <code>Pull requests</code> (top-leftish)</li>
+<li>Click <code>New pull request</code> (green, top-right)</li>
+<li>Click <code>Create pull request</code> (green, top-right)
+<ul>
+<li>It should already be on this repo unless you’ve been doing other things in Git</li>
+</ul></li>
+<li>In the comment window put your name so I know who you are if it isn’t obvious from your GitHub username</li>
+<li>Click <code>Create pull request</code> (green, bottom-right)</li>
+</ul>
+<ol start="12" style="list-style-type: decimal">
+<li>Lastly, you need to install the <a href="https://www.tidyverse.org/"><em>Tidyverse</em></a> set of R packages. This can be done running the code <code>install.packages("tidyverse")</code> in your console.</li>
+</ol>
+<p>And you’re done!!! I’ll get a notification of your pull request and, if all’s in order, I’ll accept it. If not, I’ll reply with a comment on the pull request. You should receive a notification via the email you registered with your GitHub account.</p>
+<p><br></p>
 
 </div>
 </div>
